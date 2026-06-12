@@ -1,0 +1,6 @@
+{
+  "name": "SSLC Exam Result Portal",
+  "description": "Official mock SSLC Exam Results and Revaluation Verification portal of Kerala.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
