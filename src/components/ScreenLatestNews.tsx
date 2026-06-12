@@ -42,7 +42,7 @@ export const ScreenLatestNews: React.FC<ScreenLatestNewsProps> = ({ onNavigateNe
             <span id="star-bullet" className="text-white text-lg select-none">★</span>
             <div id="link-block" className="flex flex-col gap-2">
               <span id="announcement-text" className="text-white font-medium text-[15px] leading-relaxed tracking-wide">
-                SSLC Examination MARCH 2024 - REVALUATION RESULT PUBLISHED
+                SSLC Examination MARCH 2026 - REVALUATION RESULT PUBLISHED
               </span>
               
               {/* Dynamic trigger - Click Here Link in prominent red style */}
