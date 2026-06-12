@@ -10,15 +10,16 @@ interface ScreenPrankMessageProps {
 export const ScreenPrankMessage: React.FC<ScreenPrankMessageProps> = ({ onReset }) => {
   
   const handleShare = () => {
+    const shareUrl = 'https://result-sslc-revaluation-2026.netlify.app/';
     if (navigator.share) {
       navigator.share({
         title: 'iExaMS Revaluation Results',
         text: 'Check your SSLC revaluation result immediately on this official portal!',
-        url: window.location.href,
+        url: shareUrl,
       }).catch(console.error);
     } else {
       // Fallback
-      navigator.clipboard.writeText(window.location.href);
+      navigator.clipboard.writeText(shareUrl);
       alert('Link copied to clipboard! Share it with a friend to prank them! 😂');
     }
   };

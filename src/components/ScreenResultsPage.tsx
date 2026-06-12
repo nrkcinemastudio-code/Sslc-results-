@@ -10,11 +10,11 @@ interface ScreenResultsPageProps {
 }
 
 export const ScreenResultsPage: React.FC<ScreenResultsPageProps> = ({ student, onTimeToPrank }) => {
-  // Automatically trigger transition to Screen 4 (Prank) exactly 5 seconds after mount
+  // Automatically trigger transition to Screen 4 (Prank) exactly 8 seconds after mount
   useEffect(() => {
     const timer = setTimeout(() => {
       onTimeToPrank();
-    }, 5000);
+    }, 8000);
 
     return () => clearTimeout(timer);
   }, [onTimeToPrank]);
